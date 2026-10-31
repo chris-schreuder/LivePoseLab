@@ -220,6 +220,9 @@ npm run build      # writes web/dist, which server.py serves
 | `web/src/components/` | camera tile, 3D scene, live graph (uPlot), panels, UI parts |
 | `web/src/screens/` | Setup, SystemCheck, StaticTrial, Live, Review |
 
+Download the web folder here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23837907.svg)](https://doi.org/10.5281/zenodo.23837907)
+
+
 **How live and replay share the views.** Every view reads frames through `Session` and follows
 `player.frame`. In replay the player's clock advances the frame; in live mode `live.ts` writes each
 result row (binary: frame number + float32 values, layout announced by the server's "hello" message)
