@@ -1,0 +1,29 @@
+dataset:
+    img_dir: /path/to/data
+    keypoints: all_63
+    preprocess:
+        input_size:
+        - 192
+        - 256
+        output_size:
+        - 48
+        - 64
+    sigma: 0.05
+model:
+    decoder: simple
+    input_size:
+    - 192
+    - 256
+    name: ViTPose
+    num_joints: 59
+    output_size:
+    - 48
+    - 64
+    variant: B
+    weights: weights/vitpose-b-simple.pth
+training:
+    batch_size: 16
+    epochs: 5
+    learning_rate: 5.0070327565333914e-05
+    optimizer: adam
+    output_dir: runs/

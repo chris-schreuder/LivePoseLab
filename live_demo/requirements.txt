@@ -1,0 +1,6 @@
+# Live demo server and exports (on top of ../requirements.txt, which the recorder needs)
+fastapi
+uvicorn[standard]
+c3d          # C3D export
+matplotlib   # PDF summary
+numpy

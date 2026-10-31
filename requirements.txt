@@ -1,0 +1,12 @@
+# Install PyTorch for your GPU first, e.g. (CUDA 12.6):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+torch>=2.0
+timm>=0.9          # ViTPose backbone
+numpy
+opencv-python
+matplotlib
+pandas
+pyyaml
+tqdm
+ultralytics>=8.4   # YOLO26 person detector (stream simulator)
+scipy              # joint-angle model of the LivePoseFormer repo (stream simulator --biomech)

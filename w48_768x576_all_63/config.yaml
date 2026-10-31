@@ -1,0 +1,22 @@
+dataset:
+    img_dir: /path/to/data
+    keypoints: all_63
+    preprocess:
+        input_size:
+        - 576
+        - 768
+        output_size:
+        - 144
+        - 192
+    sigma: 0.05
+model:
+    W: 48
+    name: HRNet
+    num_joints: 59
+    weights: weights/pose_hrnet_w48_384x288.pth
+training:
+    batch_size: 8
+    epochs: 5
+    learning_rate: 0.0011435780278433413
+    optimizer: adam
+    output_dir: runs/
